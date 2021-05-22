@@ -2,7 +2,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="ir.aradsheybak.storeforchallenge">
 
-
     <application
         android:name=".Components.Base"
         android:allowBackup="false"
@@ -11,6 +10,8 @@
         android:roundIcon="@drawable/ic_launcher_round"
         android:supportsRtl="false"
         android:theme="@style/Theme.StoreForChallenge">
+        <activity android:name=".Dialog.NoInternet.NoInternetActivity"
+            android:theme="@style/DialogTouchFalse"/>
         <activity android:name=".Activity.Spalsh.SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -18,8 +19,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Activity.Main.MainActivity">
-        </activity>
+        <activity android:name=".Activity.Main.MainActivity"></activity>
     </application>
 
 </manifest>

@@ -3,6 +3,8 @@
 
     <string name="slogan">بهترین خرید زندگیت رو با ما تجربه کن!</string>
     <string name="web_site">www.aradsheybak.ir</string>
-
-
+    <string name="title_no_internet">اینترنت دستگاه قطع می باشد</string>
+    <string name="description_no_internet">برای استفاده از اپلیکیشن شما نیاز به اینترنت دارید، لطفا اینترنت دستگاه خود را بررسی بفرمایید.</string>
+    <string name="connect_to_wifi">اتصال به wifi</string>
+    <string name="connect_to_mobile_data">اتصال به دیتای موبایل</string>
 </resources>

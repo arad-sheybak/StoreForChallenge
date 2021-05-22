@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    tools:context=".Dialog.NoInternet.NoInternetActivity"
+    android:background="@color/dark_bg"
+    android:paddingBottom="@dimen/padding_10dp"
+    >
+
+    <ImageView
+        android:id="@+id/iv_no_internet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="@dimen/padding_10dp"
+        android:src="@drawable/ic_no_internet"
+        />
+    <TextView
+        android:id="@+id/tv_title_no_internet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/iv_no_internet"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="@dimen/padding_10dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_16sp"
+        android:text="@string/title_no_internet"
+        />
+
+    <TextView
+        android:id="@+id/tv_description_no_internet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tv_title_no_internet"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="@dimen/padding_10dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_13sp"
+        android:text="@string/description_no_internet"
+        android:layout_marginLeft="@dimen/margin_25dp"
+        android:layout_marginRight="@dimen/margin_25dp"
+        android:gravity="center"
+        />
+
+    <Button
+        android:id="@+id/btn_wifi"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tv_description_no_internet"
+        app:layout_constraintRight_toRightOf="@id/tv_description_no_internet"
+        app:layout_constraintWidth_percent="0.4"
+        android:layout_marginTop="@dimen/margin_15dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_13sp"
+        android:text="@string/connect_to_wifi"
+        android:background="@drawable/shp_connect_to_internet"
+        />
+
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tv_description_no_internet"
+        app:layout_constraintLeft_toLeftOf="@id/tv_description_no_internet"
+        app:layout_constraintWidth_percent="0.4"
+        android:layout_marginTop="@dimen/margin_15dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_13sp"
+        android:text="@string/connect_to_mobile_data"
+        android:background="@drawable/shp_connect_to_internet"
+
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>

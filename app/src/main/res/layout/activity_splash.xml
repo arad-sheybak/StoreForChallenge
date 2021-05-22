@@ -4,6 +4,47 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SplashActivity">
+    tools:context=".Activity.Spalsh.SplashActivity"
+    android:background="@color/dark_bg"
+    >
 
+    <ImageView
+        android:id="@+id/iv_logo_splash"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintHeight_percent="0.35"
+        app:layout_constraintWidth_percent="0.7"
+        />
+    <TextView
+        android:id="@+id/tv_slogan_splash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/iv_logo_splash"
+        app:layout_constraintLeft_toLeftOf="@id/iv_logo_splash"
+        app:layout_constraintRight_toRightOf="@id/iv_logo_splash"
+        android:textSize="@dimen/font_16sp"
+        android:textColor="@color/gold"
+        android:textStyle="bold|italic"
+        android:text="@string/slogan"
+        android:layout_marginTop="@dimen/padding_10dp"
+        />
+
+    <TextView
+        fontPath="fonts/simplifica.ttf"
+        android:id="@+id/tv_web_site_splash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tv_slogan_splash"
+        app:layout_constraintLeft_toLeftOf="@id/tv_slogan_splash"
+        app:layout_constraintRight_toRightOf="@id/tv_slogan_splash"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="@dimen/font_13sp"
+        android:text="@string/web_site"
+        android:layout_marginTop="@dimen/margin_15dp"
+        tools:ignore="MissingPrefix" />
 </androidx.constraintlayout.widget.ConstraintLayout>

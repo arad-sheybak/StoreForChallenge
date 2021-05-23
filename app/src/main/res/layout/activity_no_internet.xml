@@ -8,6 +8,7 @@
     tools:context=".Dialog.NoInternet.NoInternetActivity"
     android:background="@color/dark_bg"
     android:paddingBottom="@dimen/padding_10dp"
+    android:id="@+id/cl_root_no_internet"
     >
 
     <ImageView
@@ -67,6 +68,7 @@
         />
 
     <Button
+        android:id="@+id/btn_mobile_data"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@id/tv_description_no_internet"

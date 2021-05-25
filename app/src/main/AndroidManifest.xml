@@ -4,7 +4,6 @@
 
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
-
     <application
         android:name=".Components.Base"
         android:allowBackup="false"
@@ -13,8 +12,10 @@
         android:roundIcon="@drawable/ic_launcher_round"
         android:supportsRtl="false"
         android:theme="@style/Theme.StoreForChallenge">
-        <activity android:name=".Dialog.NoInternet.NoInternetActivity"
-            android:theme="@style/DialogTouchFalse"/>
+        <activity android:name=".Activity.Login.LoginActivity"></activity>
+        <activity
+            android:name=".Dialog.NoInternet.NoInternetActivity"
+            android:theme="@style/DialogTouchFalse" />
         <activity android:name=".Activity.Spalsh.SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -22,7 +23,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Activity.Main.MainActivity"></activity>
+        <activity android:name=".Activity.Main.MainActivity" />
     </application>
 
 </manifest>

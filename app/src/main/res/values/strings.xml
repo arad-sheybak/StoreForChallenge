@@ -7,4 +7,12 @@
     <string name="description_no_internet">برای استفاده از اپلیکیشن شما نیاز به اینترنت دارید، لطفا اینترنت دستگاه خود را بررسی بفرمایید.</string>
     <string name="connect_to_wifi">اتصال به wifi</string>
     <string name="connect_to_mobile_data">اتصال به دیتای موبایل</string>
+
+    <string name="login">ورود</string>
+    <string name="username">نام کاربری</string>
+    <string name="hint_username">ایمیل خود را وارد نمایید.</string>
+    <string name="password">کلمه عبور</string>
+    <string name="hint_password">کلمه عبور را وارد نمایید.</string>
+    <string name="create_account">حساب کاربری ایجاد کنید</string>
+    <string name="forget_password">کلمه عبور را فراموش کرده ام!</string>
 </resources>

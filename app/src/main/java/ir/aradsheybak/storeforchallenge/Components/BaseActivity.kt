@@ -2,13 +2,17 @@ package ir.aradsheybak.storeforchallenge.Components
 
 import android.app.Activity
 import android.content.Context
+import android.content.Intent
 import android.net.ConnectivityManager
 import android.net.NetworkCapabilities
 import android.os.Build
 import android.os.Bundle
 import android.util.DisplayMetrics
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import io.github.inflationx.viewpump.ViewPumpContextWrapper
+import java.util.regex.Matcher
+import java.util.regex.Pattern
 
 open class BaseActivity : AppCompatActivity() {
     private lateinit var context:Context
@@ -57,4 +61,7 @@ open class BaseActivity : AppCompatActivity() {
         return displayMetrics.widthPixels
     }
 
+    fun showToastLong(mContext:Context,message : String){
+        Toast.makeText(mContext, message, Toast.LENGTH_LONG).show()
+    }
 }

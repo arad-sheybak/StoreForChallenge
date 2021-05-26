@@ -43,6 +43,8 @@ class SplashActivity : BaseActivity() {
                 //go to Login
                 val intent = Intent(context,LoginActivity::class.java)
                 startActivity(intent)
+                finish()
+
             }else{
                 //show no internet dialog
                 val intent = Intent(context,NoInternetActivity::class.java)

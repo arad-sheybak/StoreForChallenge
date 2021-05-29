@@ -3,6 +3,7 @@ package ir.aradsheybak.storeforchallenge.Activity.Login
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
+import ir.aradsheybak.storeforchallenge.Activity.SignUp.SignUpActivity
 import ir.aradsheybak.storeforchallenge.Components.BaseActivity
 import ir.aradsheybak.storeforchallenge.Dialog.NoInternet.NoInternetActivity
 import ir.aradsheybak.storeforchallenge.databinding.ActivityLoginBinding
@@ -31,6 +32,11 @@ class LoginActivity : BaseActivity() {
                 startActivity(intent)
             }
         }
+
+        binding.tvTitleSignUp.setOnClickListener{
+            val intent = Intent(context, SignUpActivity::class.java)
+            startActivity(intent)
+        }
     }
 
     private fun sendRequest() {
@@ -41,7 +47,7 @@ class LoginActivity : BaseActivity() {
             getPassword()
             if (checkPassword()) {
                 //true ---> now you can send request to server
-                showToastLong(context, "now you can send request to server")
+                showToastLong("now you can send request to server")
             }
         }
 
@@ -58,7 +64,7 @@ class LoginActivity : BaseActivity() {
     private fun checkEmail(): Boolean {
         if (email.length == 0) {
             //error ---> username is empty
-            showToastLong(context, "username is empty")
+            showToastLong("username is empty")
             return false
         } else {
             if (validateEmail(email)) {
@@ -66,7 +72,7 @@ class LoginActivity : BaseActivity() {
                 return true
             } else {
                 //false --> email is invalid
-                showToastLong(context, "email is invalid")
+                showToastLong("email is invalid")
                 return false
             }
         }
@@ -76,7 +82,7 @@ class LoginActivity : BaseActivity() {
     private fun checkPassword(): Boolean {
         if (password.length == 0) {
             //error ---> password is empty
-            showToastLong(context, "password is empty")
+            showToastLong("password is empty")
             return false
         } else {
             if (password.length >= 6) {
@@ -84,7 +90,7 @@ class LoginActivity : BaseActivity() {
                 return true
             } else {
                 //error --> input correct password
-                showToastLong(context, "input correct password")
+                showToastLong("input correct password")
                 return false
             }
         }

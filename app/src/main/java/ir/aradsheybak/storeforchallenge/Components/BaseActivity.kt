@@ -61,7 +61,9 @@ open class BaseActivity : AppCompatActivity() {
         return displayMetrics.widthPixels
     }
 
-    fun showToastLong(mContext:Context,message : String){
-        Toast.makeText(mContext, message, Toast.LENGTH_LONG).show()
+    fun showToastLong(message : String){
+        Toast.makeText(applicationContext, message, Toast.LENGTH_LONG).show()
     }
+
+
 }

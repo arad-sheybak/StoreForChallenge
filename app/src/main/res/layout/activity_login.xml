@@ -147,7 +147,7 @@
         android:textColor="@color/gray_m"
         android:textSize="@dimen/font_13sp"
         android:text="@string/forget_password"
-        app:layout_constraintTop_toBottomOf="@id/tv_title_signup"
+        app:layout_constraintTop_toBottomOf="@id/tv_title_sign_up"
         android:layout_marginTop="@dimen/margin_25dp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"

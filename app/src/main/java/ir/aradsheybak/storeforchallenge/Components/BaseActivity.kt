@@ -65,5 +65,9 @@ open class BaseActivity : AppCompatActivity() {
         Toast.makeText(applicationContext, message, Toast.LENGTH_LONG).show()
     }
 
+    fun changeActivity(context: Context, newActivity: Class<*>?){
+        val intent = Intent(context, newActivity)
+        startActivity(intent)
+    }
 
 }

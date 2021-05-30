@@ -1,7 +1,6 @@
 package ir.aradsheybak.storeforchallenge.Activity.Login
 
 import android.content.Context
-import android.content.Intent
 import android.os.Bundle
 import ir.aradsheybak.storeforchallenge.Activity.SignUp.SignUpActivity
 import ir.aradsheybak.storeforchallenge.Components.BaseActivity
@@ -28,14 +27,12 @@ class LoginActivity : BaseActivity() {
                 sendRequest()
             } else {
                 //show no internet dialog
-                val intent = Intent(context, NoInternetActivity::class.java)
-                startActivity(intent)
+                changeActivity(context, NoInternetActivity::class.java)
             }
         }
 
-        binding.tvTitleSignUp.setOnClickListener{
-            val intent = Intent(context, SignUpActivity::class.java)
-            startActivity(intent)
+        binding.tvTitleSignUp.setOnClickListener {
+            changeActivity(context, SignUpActivity::class.java)
         }
     }
 

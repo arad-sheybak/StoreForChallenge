@@ -33,13 +33,13 @@ class SplashActivity : BaseActivity() {
         Handler().postDelayed({
             if (checkNetwork()) {
                 //go to Login
-                changeActivity(context, LoginActivity::class.java)
+                changeActivity(LoginActivity::class.java)
                 finish()
 
             } else {
                 //show no internet dialog
 
-                changeActivity(context, NoInternetActivity::class.java)
+                changeActivity(NoInternetActivity::class.java)
 
             }
         }, TIME_OUT)

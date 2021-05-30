@@ -26,7 +26,7 @@ class SignUpActivity : BaseActivity() {
                 doSignUp()
             }else{
                 //network is not connect
-                changeActivity(context, NoInternetActivity::class.java)
+                changeActivity(NoInternetActivity::class.java)
 
             }
 

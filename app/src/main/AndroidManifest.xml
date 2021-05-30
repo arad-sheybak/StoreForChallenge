@@ -12,7 +12,10 @@
         android:roundIcon="@drawable/ic_launcher_round"
         android:supportsRtl="false"
         android:theme="@style/Theme.StoreForChallenge">
-        <activity android:name=".Activity.SignUp.SignUpActivity"></activity>
+        <activity android:name=".Activity.ForgetPassword.STP3.ForgetPasswordCreateNewPasswordActivity"></activity>
+        <activity android:name=".Activity.ForgetPassword.STP2.ForgetPasswordVerifyEmailActivity" />
+        <activity android:name=".Activity.ForgetPassword.STP1.ForgetPasswordGetEmailActivity" />
+        <activity android:name=".Activity.SignUp.SignUpActivity" />
         <activity android:name=".Activity.Login.LoginActivity" />
         <activity
             android:name=".Dialog.NoInternet.NoInternetActivity"

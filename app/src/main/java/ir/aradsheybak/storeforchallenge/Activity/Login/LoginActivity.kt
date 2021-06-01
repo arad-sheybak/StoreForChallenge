@@ -3,6 +3,7 @@ package ir.aradsheybak.storeforchallenge.Activity.Login
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
+import ir.aradsheybak.storeforchallenge.Activity.ForgetPassword.STP1.ForgetPasswordGetEmailActivity
 import ir.aradsheybak.storeforchallenge.Activity.SignUp.SignUpActivity
 import ir.aradsheybak.storeforchallenge.Components.BaseActivity
 import ir.aradsheybak.storeforchallenge.Dialog.NoInternet.NoInternetActivity
@@ -37,6 +38,9 @@ class LoginActivity : BaseActivity() {
 //            val intent = Intent(applicationContext, SignUpActivity::class.java)
 //            startActivity(intent)
 
+        }
+        binding.tvTitleForgetPassword.setOnClickListener {
+            changeActivity(ForgetPasswordGetEmailActivity::class.java)
         }
     }
 

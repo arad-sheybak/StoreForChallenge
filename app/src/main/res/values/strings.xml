@@ -17,12 +17,16 @@
     <string name="forget_password">کلمه عبور را فراموش کرده ام!</string>
     <string name="sign_up">ثبت نام</string>
     <string name="email">ایمیل</string>
-    <string name="confirm_password">تایید کلمه عبور</string>
+    <string name="confirm_password">ثبت کلمه عبور</string>
     <string name="hint_confirm_password">مجددا کلمه عبور را وارد نمایید.</string>
     <string name="get_verification_code">دریافت کد یکبار مصرف</string>
     <string name="verify_code">تایید کد</string>
     <string name="verification_code">کد تاییدیه</string>
     <string name="hint_verification_code">کد تاییدیه را وارد نمایید.</string>
+    <string name="profile">پروفایل</string>
+    <string name="shopping_basket">سبد خرید</string>
+    <string name="categories">دسته بندی ها</string>
+    <string name="home">خانه</string>
 
 
 </resources>

@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import ir.aradsheybak.storeforchallenge.Activity.ForgetPassword.STP2.ForgetPasswordVerifyEmailActivity
 import ir.aradsheybak.storeforchallenge.Components.BaseActivity
+import ir.aradsheybak.storeforchallenge.Dialog.NoInternet.NoInternetActivity
 import ir.aradsheybak.storeforchallenge.R
 import ir.aradsheybak.storeforchallenge.databinding.ActivityForgetPasswordGetEmailBinding
 
@@ -18,11 +19,16 @@ class ForgetPasswordGetEmailActivity : BaseActivity() {
         context = this
         defineBinding()
         binding.btnGetVerificationCode.setOnClickListener {
-            getEmail()
-            if (checkEmail()){
-                //true --> send verification code to user email
-                sendVerificationCode()
+            if (checkNetwork()){
+                getEmail()
+                if (checkEmail()){
+                    //true --> send verification code to user email
+                    sendVerificationCode()
+                }
+            }else{
+                changeActivity(NoInternetActivity::class.java)
             }
+
         }
 
     }

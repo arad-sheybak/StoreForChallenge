@@ -101,6 +101,7 @@ class SignUpActivity : BaseActivity() {
         }
 
     }
+
     private fun doSignUp(){
         getEmail()
         if (checkEmail()){

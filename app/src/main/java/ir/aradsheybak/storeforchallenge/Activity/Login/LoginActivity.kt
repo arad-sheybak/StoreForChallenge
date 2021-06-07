@@ -4,6 +4,7 @@ import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import ir.aradsheybak.storeforchallenge.Activity.ForgetPassword.STP1.ForgetPasswordGetEmailActivity
+import ir.aradsheybak.storeforchallenge.Activity.Main.MainActivity
 import ir.aradsheybak.storeforchallenge.Activity.SignUp.SignUpActivity
 import ir.aradsheybak.storeforchallenge.Components.BaseActivity
 import ir.aradsheybak.storeforchallenge.Dialog.NoInternet.NoInternetActivity
@@ -52,7 +53,8 @@ class LoginActivity : BaseActivity() {
             getPassword()
             if (checkPassword()) {
                 //true ---> now you can send request to server
-                showToastLong("now you can send request to server")
+//                showToastLong("now you can send request to server")
+                changeActivity(MainActivity::class.java)
             }
         }
 

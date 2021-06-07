@@ -5,7 +5,8 @@
     android:background="@color/dark_bg"
     android:layout_gravity="center"
     android:weightSum="4"
-    android:orientation="horizontal">
+    android:orientation="horizontal"
+   >
 
         <LinearLayout
             android:id="@+id/ll_profile"

@@ -66,7 +66,7 @@ open class BaseActivity : AppCompatActivity() {
     }
 
     fun changeActivity(newActivity: Class<*>?){
-        val intent = Intent(applicationContext, newActivity)
+        val intent = Intent(this, newActivity)
         startActivity(intent)
 
     }

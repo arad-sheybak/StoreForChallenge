@@ -8,7 +8,9 @@ import android.view.animation.Animation
 import android.view.animation.AnimationUtils
 import com.bumptech.glide.Glide
 import ir.aradsheybak.storeforchallenge.Activity.Login.LoginActivity
+import ir.aradsheybak.storeforchallenge.Activity.Main.MainActivity
 import ir.aradsheybak.storeforchallenge.Components.BaseActivity
+import ir.aradsheybak.storeforchallenge.Components.SPClass
 import ir.aradsheybak.storeforchallenge.Dialog.NoInternet.NoInternetActivity
 import ir.aradsheybak.storeforchallenge.R
 import ir.aradsheybak.storeforchallenge.databinding.ActivitySplashBinding
@@ -19,9 +21,11 @@ class SplashActivity : BaseActivity() {
     private lateinit var anim: Animation
     private lateinit var context: Context
     private val TIME_OUT: Long = 3000
+    private lateinit var sp : SPClass
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         context = this
+        sp = SPClass(context)
         viewBinding()
         defineAnimation()
         setLogo()
@@ -32,8 +36,16 @@ class SplashActivity : BaseActivity() {
     fun showSplash() {
         Handler().postDelayed({
             if (checkNetwork()) {
-                //go to Login
-                changeActivity(LoginActivity::class.java)
+                //check user is login or not?
+                    if (sp.getBoolean(sp.USER_LOGIN) == true){
+                        //if true -> go to mainActivity
+                        changeActivity(MainActivity::class.java)
+
+                    }else{
+                        //if false -> go to loginActivity
+                        changeActivity(LoginActivity::class.java)
+
+                    }
                 finish()
 
             } else {

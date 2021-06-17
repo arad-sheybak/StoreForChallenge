@@ -2,6 +2,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/gray_bg"
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <com.denzcoskun.imageslider.ImageSlider
         android:id="@+id/slider_home"
@@ -10,10 +11,13 @@
         app:iss_auto_cycle="true"
         app:iss_period="3000"
         app:iss_delay="0"
+        app:iss_corner_radius="20"
+        app:iss_selected_dot="@drawable/dot_selected_blue"
+        android:layout_marginLeft="@dimen/padding_5dp"
+        android:layout_marginRight="@dimen/padding_5dp"
+        android:layout_marginTop="@dimen/padding_5dp"
+        app:iss_title_background="@android:color/transparent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintHeight_percent="0.3"
-        android:layout_marginTop="@dimen/padding_5dp"
-        android:layout_marginRight="@dimen/padding_5dp"
-        android:layout_marginLeft="@dimen/padding_5dp"
         />
 </androidx.constraintlayout.widget.ConstraintLayout>

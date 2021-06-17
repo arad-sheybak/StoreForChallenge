@@ -10,7 +10,9 @@ import android.os.Bundle
 import android.util.DisplayMetrics
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import androidx.fragment.app.Fragment
 import io.github.inflationx.viewpump.ViewPumpContextWrapper
+import ir.aradsheybak.storeforchallenge.R
 import java.util.regex.Matcher
 import java.util.regex.Pattern
 
@@ -70,6 +72,8 @@ open class BaseActivity : AppCompatActivity() {
         startActivity(intent)
 
     }
-
+    fun changeFragment(fragment:Fragment){
+        supportFragmentManager.beginTransaction().replace(R.id.fl_content,fragment).commit()
+    }
 
 }

@@ -4,6 +4,10 @@ import android.os.BaseBundle
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import ir.aradsheybak.storeforchallenge.Components.BaseActivity
+import ir.aradsheybak.storeforchallenge.Fragments.Categories.CategoriesFragment
+import ir.aradsheybak.storeforchallenge.Fragments.Home.HomeFragment
+import ir.aradsheybak.storeforchallenge.Fragments.Profile.ProfileFragment
+import ir.aradsheybak.storeforchallenge.Fragments.ShoppingBasket.ShoppingBasketFragment
 import ir.aradsheybak.storeforchallenge.R
 import ir.aradsheybak.storeforchallenge.databinding.ActivityMainBinding
 
@@ -53,6 +57,7 @@ class MainActivity : BaseActivity() {
         currentTab = "profile"
         binding.bottomNavigation.ivProfile.setImageDrawable(getDrawable(R.drawable.ic_profile_gold))
         binding.bottomNavigation.tvProfile.setTextColor(getColor(R.color.gold))
+        changeFragment(ProfileFragment())
     }
 
     private fun shoppingBasketClicked(){
@@ -60,6 +65,7 @@ class MainActivity : BaseActivity() {
         currentTab = "shoppingBasket"
         binding.bottomNavigation.ivShoppingBasket.setImageDrawable(getDrawable(R.drawable.ic_shopping_basket_gold))
         binding.bottomNavigation.tvShoppingBasket.setTextColor(getColor(R.color.gold))
+        changeFragment(ShoppingBasketFragment())
     }
 
     private fun categoriesClicked(){
@@ -67,6 +73,7 @@ class MainActivity : BaseActivity() {
         currentTab = "categories"
         binding.bottomNavigation.ivCategories.setImageDrawable(getDrawable(R.drawable.ic_category_gold))
         binding.bottomNavigation.tvCategories.setTextColor(getColor(R.color.gold))
+        changeFragment(CategoriesFragment())
     }
 
     private fun homeClicked(){
@@ -74,6 +81,7 @@ class MainActivity : BaseActivity() {
         currentTab = "home"
         binding.bottomNavigation.ivHome.setImageDrawable(getDrawable(R.drawable.ic_home_gold))
         binding.bottomNavigation.tvHome.setTextColor(getColor(R.color.gold))
+        changeFragment(HomeFragment())
 
     }
 

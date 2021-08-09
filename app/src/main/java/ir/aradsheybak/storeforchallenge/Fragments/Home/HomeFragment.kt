@@ -7,13 +7,16 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.denzcoskun.imageslider.constants.ScaleTypes
 import com.denzcoskun.imageslider.models.SlideModel
-import ir.aradsheybak.storeforchallenge.R
 import ir.aradsheybak.storeforchallenge.databinding.FragmentHomeBinding
 
 class HomeFragment : Fragment() {
     private lateinit var binding: FragmentHomeBinding
     private val imageList = ArrayList<SlideModel>()
-    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
+    override fun onCreateView(
+        inflater: LayoutInflater,
+        container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View? {
         binding = FragmentHomeBinding.inflate(layoutInflater, container, false)
 
         addImageToSlider()
@@ -23,15 +26,17 @@ class HomeFragment : Fragment() {
     }
 //https://github.com/denzcoskun/ImageSlideshow ---> slider repository
 
-    private fun addImageToSlider(){
+    private fun addImageToSlider() {
         imageList.add(
             SlideModel(
-                "https://d39l2hkdp2esp1.cloudfront.net/img/photo/147422/147422_00_2x.jpg", ScaleTypes.CENTER_CROP
+                "https://d39l2hkdp2esp1.cloudfront.net/img/photo/147422/147422_00_2x.jpg",
+                ScaleTypes.CENTER_CROP
             )
         )
         imageList.add(
             SlideModel(
-                "https://www.gardeningknowhow.com/wp-content/uploads/2019/08/flower-color.jpg", ScaleTypes.CENTER_CROP
+                "https://www.gardeningknowhow.com/wp-content/uploads/2019/08/flower-color.jpg",
+                ScaleTypes.CENTER_CROP
             )
         )
         imageList.add(
@@ -42,7 +47,7 @@ class HomeFragment : Fragment() {
         )
     }
 
-    private fun setArrayImageToSlider(){
+    private fun setArrayImageToSlider() {
         binding.sliderHome.setImageList(imageList)
 
     }

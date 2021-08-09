@@ -15,5 +15,7 @@
     <color name="gray_s">#9DA3AC</color>
     <color name="blue_l">#38E2F8</color>
     <color name="gray_bg">#EDEDED</color>
+    <color name="red_xl">#EA0C0C</color>
+    <color name="green_xl">#04DF5C</color>
 
 </resources>

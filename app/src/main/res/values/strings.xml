@@ -28,5 +28,15 @@
     <string name="categories">دسته بندی ها</string>
     <string name="home">خانه</string>
 
+    <string name="sample_product_name">گوشی موبایل اپل آیفون 12 پرو 128 گیگ</string>
+    <string name="sample_product_description">گوشی موبایل آیفون 12 پرو با حافظه 128 گیگ رجیستر شده و گارانتی اصلی به همراه هدیه ی ویژه</string>
+    <string name="sample_old_product_price">34,650,000 تومان</string>
+    <string name="sample_new_product_price">32,458,700 تومان</string>
+    <string name="sample_product_discount">20%</string>
+
+
+
+
+
 
 </resources>
